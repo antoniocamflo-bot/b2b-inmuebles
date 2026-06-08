@@ -1,3 +1,6 @@
+export const dynamic = 'force-dynamic';
+
+// ... (Todo el resto del código de tu layout se queda exactamente igual abajo)
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
