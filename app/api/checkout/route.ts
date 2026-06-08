@@ -1,3 +1,6 @@
+export const dynamic = 'force-dynamic';
+
+// ... (Todo el resto de tus importaciones y código que ya tenías abajo se queda exactamente igual)
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
