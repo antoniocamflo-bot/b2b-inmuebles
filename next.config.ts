@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
-    // Evita que TypeScript atore el servidor de Vercel
+    // Evita que TypeScript agote los recursos del servidor validando tipos en la nube
     ignoreBuildErrors: true,
   },
   eslint: {
-    // Apaga el linter para agilizar el tiempo de compilación
+    // Omitimos validaciones estéticas de código durante la compilación
     ignoreDuringBuilds: true,
   },
-  // Desactiva los mapas de código pesados que agotan la RAM
+  // Desactiva los mapas de código pesados que se comen la memoria RAM de Vercel
   productionBrowserSourceMaps: false,
 };
 
