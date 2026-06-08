@@ -5,9 +5,9 @@ import { useRouter } from 'next/navigation'
 
 export default function MisSolicitudes() {
   const router = useRouter()
-  const [solicitudes, setSolicitudes] = useState([])
+  const [solicitudes, setSolicitudes] = useState<any[]>([])
   const [seleccionada, setSeleccionada] = useState(null)
-  const [cotizaciones, setCotizaciones] = useState([])
+  const [cotizaciones, setCotizaciones] = useState<any[]>([])
 
   // 1. Cargar las solicitudes del administrador
   useEffect(() => {
